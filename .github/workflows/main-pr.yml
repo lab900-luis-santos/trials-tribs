@@ -15,6 +15,6 @@ jobs:
         uses: peter-evans/create-pull-request@v4
         with:
           title: Align Dev with Main
-          body: Merge main into dev to get the latest changeds
+          body: Merge main into develop
           branch: develop
           base: main
