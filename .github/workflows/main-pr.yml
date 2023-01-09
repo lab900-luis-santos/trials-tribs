@@ -17,4 +17,4 @@ jobs:
           title: Align Dev with Main
           body: Merge main into develop
           branch: main-to-dev
-          base: develop
+          base: main
