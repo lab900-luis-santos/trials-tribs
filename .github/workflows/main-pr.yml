@@ -10,11 +10,10 @@ jobs:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
-          ref: main
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v4
         with:
           title: Align Dev with Main
           body: Merge main into develop
-          branch: develop
-          base: main
+          branch: main
+          base: develop
