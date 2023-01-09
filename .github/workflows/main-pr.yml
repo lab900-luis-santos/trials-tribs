@@ -1,4 +1,4 @@
-name: Create a PR to develop on main push
+name: Create a PR to Develop Branch from Main
 on:
   push:
     branches:
