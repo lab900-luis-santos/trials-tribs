@@ -1,0 +1,20 @@
+name: Create a PR to develop on main push
+on:
+  push:
+    branches:
+      - main
+jobs:
+  mainDevelop:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          ref: main
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v4
+        with:
+          title: Align Dev with Main
+          body: Merge main into dev to get the latest changeds
+          branch: develop
+          base: main
